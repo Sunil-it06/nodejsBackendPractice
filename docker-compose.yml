@@ -1,0 +1,11 @@
+services:
+  app:
+    container_name: sosbackend-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "5000:8080"
+
+  
